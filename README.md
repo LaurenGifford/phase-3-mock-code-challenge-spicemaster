@@ -149,9 +149,9 @@ GET /spiceblends/:id
 
 As a user, I can:
 
-- Persist new ingredients to the server when the `#ingredient-form` is submitted. Make sure to follow the format listed above to make a POST request to `/ingredients`. In the body of the request, the `spiceblendId` will need to be a **number** (not a **string**).
-- See all spice blend images in the `#spice-images` div when the page loads. Request the data from the server to get all the spice blends. Then, display the image for each of the spice blends using an `img` tag inside the `#spice-images` div.
-- Click on an image from the `#spice-images` div and see all the info about that spice blend displayed inside the `#spice-blend-detail` div. You will need to make another GET request with the spice blend's ID to get the information about the spice blend that was clicked.
+<!-- - Persist new ingredients to the server when the `#ingredient-form` is submitted. Make sure to follow the format listed above to make a POST request to `/ingredients`. In the body of the request, the `spiceblendId` will need to be a **number** (not a **string**). -->
+<!-- - See all spice blend images in the `#spice-images` div when the page loads. Request the data from the server to get all the spice blends. Then, display the image for each of the spice blends using an `img` tag inside the `#spice-images` div. -->
+<!-- - Click on an image from the `#spice-images` div and see all the info about that spice blend displayed inside the `#spice-blend-detail` div. You will need to make another GET request with the spice blend's ID to get the information about the spice blend that was clicked. -->
 
 ## Rubric
 
