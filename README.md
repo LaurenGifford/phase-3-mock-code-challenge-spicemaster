@@ -68,9 +68,9 @@ PATCH /spiceblends/1
 
 As a user, I can:
 
-- See the first spice blend (the spice blend with an ID of 1), including its **title**, **image**, and list of **ingredients**, when the page loads.
-- Update the **title** of the spice blend on the page when the `#update-form` is submitted, and **still see that change when reloading the page** (the new title should be persisted on the server).
-- Add a new **ingredient** to the spice blend when the `#ingredient-form` is submitted. The new ingredient should be displayed on the page (no persistence needed for now).
+<!-- - See the first spice blend (the spice blend with an ID of 1), including its **title**, **image**, and list of **ingredients**, when the page loads. -->
+<!-- - Update the **title** of the spice blend on the page when the `#update-form` is submitted, and **still see that change when reloading the page** (the new title should be persisted on the server). -->
+<!-- - Add a new **ingredient** to the spice blend when the `#ingredient-form` is submitted. The new ingredient should be displayed on the page (no persistence needed for now). -->
 
 ## Advanced Deliverables
 
