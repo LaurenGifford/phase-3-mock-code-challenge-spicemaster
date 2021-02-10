@@ -20,10 +20,12 @@ function submitHandler(e){
         case (e.target.id === "update-form"):
             const title  = e.target['title'].value
             updateBlend(title)
+            e.target.reset()
         break
         case (e.target.id === "ingredient-form"):
             const ingredient = e.target['name'].value
             updateIngredients(ingredient)
+            e.target.reset()
         break
     }
 }

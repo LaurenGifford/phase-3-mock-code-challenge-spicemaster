@@ -2,7 +2,7 @@
   "spiceblends": [
     {
       "id": 1,
-      "title": "pump",
+      "title": "Pumpkin Spicy",
       "image": "./assets/spices/pumpkinspicelatte.jpg"
     },
     {
@@ -116,6 +116,11 @@
       "name": "Sugar",
       "spiceblendId": 1,
       "id": 19
+    },
+    {
+      "name": "Salt",
+      "spiceblendId": 2,
+      "id": 20
     }
   ]
 }
