@@ -1,11 +1,9 @@
 // DOM ELEMENTS
-// const fetchSpicesURL = 'http://localhost:3000/spiceblends/1'
 const fetchSpicesURL = 'http://localhost:3000/spiceblends'
 const fetchIngredURL = 'http://localhost:3000/ingredients'
 const spiceImages = document.querySelector('#spice-images')
 const spiceDetails = document.querySelector('#spice-blend-detail')
 const ingredientsList = spiceDetails.querySelector('.ingredients-list')
-// const id = spiceDetails.dataset.id
 
 // EVENT LISTENERS
 window.addEventListener('load', getASpice(1))
@@ -21,7 +19,6 @@ function submitHandler(e){
     switch (true) {
         case (e.target.id === "update-form"):
             const title  = e.target['title'].value
-            // const id = spiceDetails.dataset.id
             updateBlend(title)
         break
         case (e.target.id === "ingredient-form"):
@@ -90,23 +87,14 @@ function displayPics(spicyData){
 
 function renderASpice(spiceData){
     spiceDetails.dataset.id = spiceData.id
-    
+
     const image = spiceDetails.querySelector('.detail-image')
     image.src = spiceData.image
     const title = spiceDetails.querySelector('h2')
     title.textContent = spiceData.title
     
-    // if (spiceData.ingredients){
-    //     ingredientsList.innerHTML = 
-    //     spiceData.ingredients.forEach(ingredient => {
-    //         const ingredientName = ingredient.name
-    //         addIngredient(ingredientName)
-    //     })
-    // }
-
-
-
     if (spiceData.ingredients){
+        ingredientsList.innerHTML = ""
         spiceData.ingredients.forEach(ingredient => {
             const ingredientName = ingredient.name
             addIngredient(ingredientName)
@@ -115,12 +103,9 @@ function renderASpice(spiceData){
 }
 
 function addIngredient(ingredientName){
-    // `
-    // <li class="ingredient" >${ingredientName}</li>
-    // `
     const ingredLi = document.createElement('li')
     ingredLi.classname = "ingredient"
     ingredLi.textContent = ingredientName
-    ingredientsList.append(ingredLi)
+    ingredientsList.appendChild(ingredLi)
 }
 
